@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "CoreKit",
+  defaultLocalization: "en",
   products: [
     .library(name: "CoreKit", targets: ["CoreKit"])
   ],
