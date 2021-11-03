@@ -7,8 +7,12 @@ public extension UserDefaults {
     return dateFormatter.date(from: value)
   }
   
-  func set(_ value: Date, forKey key: String) {
-    let dateFormatter = DateFormatter.iso8601
-    set(dateFormatter.string(from: value), forKey: key)
+  func set(_ value: Date?, forKey key: String) {
+    if let value = value {
+      let dateFormatter = DateFormatter.iso8601
+      set(dateFormatter.string(from: value), forKey: key)
+    } else {
+      set(nil as Any?, forKey: key)
+    }
   }
 }
