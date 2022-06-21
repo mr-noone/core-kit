@@ -1,0 +1,7 @@
+"LS.Common.warningTitle"            = "Warning";
+"LS.Common.errorTitle"              = "Error";
+"LS.Common.unexpectedError"         = "Unexpected error";
+
+"LS.Common.ok"                      = "Ok";
+"LS.Common.cancel"                  = "Cancel";
+"LS.Common.done"                    = "Done";
